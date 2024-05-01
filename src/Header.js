@@ -1,7 +1,12 @@
 import {useEffect, useState} from 'react';
+<<<<<<< HEAD
 import firebase from 'firebase';
 import instagram from '../src/instagram-logo.png';
 import {auth, storage, db} from './firebase.js';
+=======
+import instagram from '../src/instagram-logo.png';
+import {auth} from './firebase.js';
+>>>>>>> a5c7c562d1ed56534f2f302266e493d3f5dfa4d9
 
 
 function Header(props) {
@@ -52,7 +57,10 @@ function CriarConta(e){
 }
 
 function logar(e){
+<<<<<<< HEAD
     e.preventDefault();
+=======
+>>>>>>> a5c7c562d1ed56534f2f302266e493d3f5dfa4d9
     let email = document.getElementById('email-login').value;
     let senha = document.getElementById('senha-login').value;
 
@@ -83,6 +91,7 @@ function fecharModalUpload(){
 
 function UploadPost(e) {
     e.preventDefault();
+<<<<<<< HEAD
     let tituloPost = document.getElementById('Titulo-upload').value;
     let progressEl = document.getElementById('progress-upload');
 
@@ -109,6 +118,8 @@ function UploadPost(e) {
             document.getElementById('form-upload').reset();
         })
     })
+=======
+>>>>>>> a5c7c562d1ed56534f2f302266e493d3f5dfa4d9
     
 }
     return (
@@ -134,11 +145,19 @@ function UploadPost(e) {
         <div className='formUpload'>
             <div onClick={()=>fecharModalUpload()} className='close-modal-criar'>x</div>
             <h2>Fazer upload</h2>
+<<<<<<< HEAD
             <form id='form-upload' onSubmit={(e) =>UploadPost(e)}>
                 <progress id='progress-upload' value={progress}></progress>
                 <input id='Titulo-upload' type="text" placeholder='Nome da sua foto..'/>
                 <input onChange={(e)=>setFile(e.target.files[0])} type='file' name='file'/>
                 <input type="submit" value="Postar no Instagram!"/>
+=======
+            <form onSubmit={(e) =>UploadPost(e)}>
+                <progress value={progress}></progress>
+                <input id='Titulo-upload' type="text" placeholder='Nome da sua foto..'/>
+                <input type='file' name='file'/>
+                <input type="submit" value="Criar conta!"/>
+>>>>>>> a5c7c562d1ed56534f2f302266e493d3f5dfa4d9
             </form>
         </div>
     </div>

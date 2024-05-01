@@ -18,7 +18,11 @@ useEffect(()=>{
   return (
     <div className="App">
   
+<<<<<<< HEAD
       <Header user={user} setUser={setUser}></Header>
+=======
+      <Header user={user}></Header>
+>>>>>>> a5c7c562d1ed56534f2f302266e493d3f5dfa4d9
     </div>
   );
 }
