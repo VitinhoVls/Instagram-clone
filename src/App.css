@@ -41,11 +41,8 @@ body{
     border: 1px solid #ccc;
     margin-right: 5px;
     padding-left: 10px;
-<<<<<<< HEAD
     padding: 15px;
     border-radius: 10px;
-=======
->>>>>>> a5c7c562d1ed56534f2f302266e493d3f5dfa4d9
  }
 
  .header_loginform input[type=submit]{
